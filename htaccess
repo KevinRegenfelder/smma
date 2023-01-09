@@ -1,4 +1,4 @@
-RewriteEngine on
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteCond %{REQUEST_FILENAME}\.html -f
-RewriteRule ^(.*)$ $1.html [NC,L]
+
+#Convert Tilda.cc htaccess to netlify _redirects
+grep DirectoryIndex htaccess | awk -F' ' '{print "/", "/"$2, 200}' > _redirects
+grep RewriteRule htaccess | grep -v 'robots'| awk -F' ' '{print $2, $3, 200}' | sed -e 's/\^/\//g' | sed -e 's/\$//g' >> _redirects
