@@ -4,7 +4,7 @@ to = "/index.html"
 status = 301
 
 [[redirects]]
-  from = "/index.html"
+  from = "/*"
   to = "/deutsch"
   force = true
 
