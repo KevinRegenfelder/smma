@@ -1,11 +1,3 @@
-RewriteEngine On
-
-RewriteCond %{HTTPS} !=on
-RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,END]    
-
-RewriteRule ^/?index\.html$ /home [R=301,END]
-RewriteRule ^/?home/?$ /englisch.html [END]
-
 <!DOCTYPE html>
 <html lang="en">
 
