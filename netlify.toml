@@ -14,3 +14,9 @@ status = 301
   from = "/englisch.html"
   to = "/englisch"
   force = true
+
+
+  [[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 404
