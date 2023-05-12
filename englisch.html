@@ -1,3 +1,11 @@
+RewriteEngine On
+
+RewriteCond %{HTTPS} !=on
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,END]    
+
+RewriteRule ^/?index\.html$ /home [R=301,END]
+RewriteRule ^/?home/?$ /englisch.html [END]
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -208,7 +216,9 @@
                 <div class="row g-5">
                     <div class="col-md-6 col-lg-12">
                         <h4 class="text-white mb-4">Our Mission:</h4>
-                        <p>We help e-commerce brands and content creators to achieve outstanding success in the age of digitization through creative solutions.</p>
+                        <p>We help e-commerce brands and content creators to achieve outstanding success in the age of digitization through creative solutions.</p>git status
+
+
                     </div>
                 </div>
             </div>
