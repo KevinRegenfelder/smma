@@ -1,4 +1,4 @@
 [[redirects]]
-from = " /*"
+from = "/defaultsite"
 to = "/index.htm"
-status = 200
+status = 301
