@@ -1,12 +1,14 @@
 [[redirects]]
-from = "/defaultsite"
-to = "/index.html"
-status = 301
-
-[[redirects]]
-  from = "/*"
+  from = "/index.html"
   to = "/deutsch"
   force = true
+
+[[redirects]]
+from = "/defaultsite"
+to = "/deutsch"
+status = 301
+
+
 
   [[redirects]]
   from = "/englisch.html"
